@@ -1,0 +1,19 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content %}
+  <div class="container">
+  <h1>{{result}}</h1>
+      <h2>Ответ</h2>
+      {{formula}}
+            {% if image == "/grust.png" %}
+                <marquee behavior="alternate" direction="left" bgcolor="#ffdc00">
+          {% endif %}
+        <img src={{image}} alt="График">
+
+                    {% if image == "/grust.png" %}
+      </marquee>
+      {% endif %}
+
+      <p>Copyright 2023 Сайдумаров Семен Кириллович</p>
+</div>
+{% endblock %}
